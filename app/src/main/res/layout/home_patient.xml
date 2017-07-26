@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6">
+
+    <ScrollView
+        android:id="@+id/relativeheader"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/homedocs"
+        android:id="@+id/imageView2" />
+
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true" >
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="A Good Doctor"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="understand responsbility better than privilege."
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/top_layout"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/naame"
+            android:padding="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Ask a FREE Question"
+            android:textColor="#1F1F1F"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#686667"
+                android:text="Get answers from doctors within 24 hrs."/>
+            </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="66dp"
+        android:background="#757575"
+        android:layout_below="@+id/bottom_layout"
+        />
+
+    <LinearLayout
+        android:id="@+id/bottom2_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/bottom_layout"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/naame"
+            android:padding="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Find Doctors"
+                android:textColor="#1F1F1F"/>
+            <TextView
+                android:id="@+id/consullt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#686667"
+                android:text="Consult online or book appointment"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="5dp"
+        android:background="#757575"
+        android:layout_below="@+id/bottom2_layout"
+        android:layout_marginLeft="66dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/bottom3_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/bottom2_layout"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/naame"
+            android:padding="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Treatment Enquiry"
+                android:textColor="#1F1F1F"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#686667"
+                android:text="Get treatment cost and other details"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="66dp"
+        android:background="#757575"
+        android:layout_below="@+id/bottom3_layout"
+        />
+
+    <LinearLayout
+        android:id="@+id/bottom4_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/bottom3_layout"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/naame"
+            android:padding="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Full Body Checkup @ Rs. 599"
+                android:textColor="#1F1F1F"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#686667"
+                android:text="Home Collection + Online Reports + FREE + Doctor consulation"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:background="#289E4A"
+        android:layout_marginTop="2dp">
+        <TextView
+            android:id="@+id/sign"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:textSize="12dp"
+            android:layout_height="wrap_content"
+            android:textColor="#F6F6F6"
+            android:text="@string/txttermcondition1"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "772922116651",
+    "firebase_url": "https://bjaindoctor-22cae.firebaseio.com",
+    "project_id": "bjaindoctor-22cae",
+    "storage_bucket": "bjaindoctor-22cae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772922116651:android:2bb7c28e24d528fa",
+        "android_client_info": {
+          "package_name": "com.emobi.bjaindoc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772922116651-kjhco731rc1pvnsaf1ddg7p417nq0rk3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.emobi.bjaindoc",
+            "certificate_hash": "6FEB4B4EF779D1BD528C088194112B893B785B67"
+          }
+        },
+        {
+          "client_id": "772922116651-cgvqnkupljsommo0mc6e3fc6mg53dved.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTbanu7NcUjafhRzsQBQMMP31G4_LPjD4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772922116651-cgvqnkupljsommo0mc6e3fc6mg53dved.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "772922116651-bs44tl9kq1ercu15i70jooar7j4apla0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.emobi.Homeopathybjain"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772922116651:android:ed93ba49730ae318",
+        "android_client_info": {
+          "package_name": "com.emobi.bjainpatient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772922116651-pccufm629q98rtt0cgj106et5uinrj7g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.emobi.bjainpatient",
+            "certificate_hash": "6FEB4B4EF779D1BD528C088194112B893B785B67"
+          }
+        },
+        {
+          "client_id": "772922116651-cgvqnkupljsommo0mc6e3fc6mg53dved.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTbanu7NcUjafhRzsQBQMMP31G4_LPjD4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772922116651-cgvqnkupljsommo0mc6e3fc6mg53dved.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "772922116651-bs44tl9kq1ercu15i70jooar7j4apla0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.emobi.Homeopathybjain"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

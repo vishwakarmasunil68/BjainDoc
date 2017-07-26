@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#2196F3</color>
+    <color name="primary_light">#90CAF9</color>
+    <color name="accent">#2196F3</color>
+    <color name="primary_text">#fff</color>
+    <color name="secondary_text">#fff</color>
+    <color name="divider">#1fffffff</color>
+    <color name="tab_text_color">#BBDEFB</color>
+    <color name="tab_text_color_selected">#fff</color>
+    <color name="tab_indicator">#90CAF9</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">  #FF4081</color>
+    <!-- App Main Palette -->
+    <color name="primaryDark">@color/green_700</color>
+    <color name="textPrimary">@color/text_white_text_icons_100</color>
+
+    <!-- Text -->
+    <!-- Text -->
+    <color name="text_black_100">#000000</color>
+    <color name="text_black_text_87">#DE000000</color>
+    <color name="text_black_secondary_icon_54">#8A000000</color>
+    <color name="text_black_disable_hint_26">#42000000</color>
+    <color name="text_black_divider_12">#1F000000</color>
+
+    <color name="text_white_text_icons_100">#FFFFFF</color>
+    <color name="text_white_secondary_70">#B3FFFFFF</color>
+    <color name="text_white_disabled_hint_30">#4DFFFFFF</color>
+    <color name="text_white_divider_12">#1FFFFFFF</color>
+
+    <!-- NavigationDrawer -->
+    <color name="navigation_drawer_background">#ffffffff</color>
+    <color name="nav_drawer_item_icon_normal">@color/grey_600</color>
+    <color name="nav_drawer_item_icon_selected">@color/green_500</color>
+    <color name="nav_drawer_item_text_selected">@color/green_500</color>
+    <color name="nav_drawer_section_subheader">@color/text_black_secondary_icon_54</color>
+    <color name="nav_drawer_inset_foreground">#4000</color>
+
+    <color name="nav_drawer_row_item_unselected">@color/white</color>
+    <color name="nav_drawer_row_item_selected">@color/grey_200</color>
+    <color name="nav_drawer_row_item_pressed">@color/grey_400</color>
+
+    <!-- Green -->
+    <color name="green_500">#4caf50</color>
+
+    <color name="green_900">#388e3c</color>
+    <color name="green_700">#289E4A</color>
+
+
+    <!-- Grey -->
+    <color name="grey_200">#eeeeee</color>
+    <color name="grey_400">#bdbdbd</color>
+    <color name="grey_600">#757575</color>
+    <color name="FAFAFA">#FAFAFA</color>
+    <!-- Blue -->
+    <color name="blue_500">#2196f3</color>
+
+    <!-- Amber -->
+    <color name="amber_500">#ffc107</color>
+    <color name="user_hint">#a1d1c2</color>
+    <color name="user_text">#ffffff</color>
+    <color name="gray">#E0E0E0</color>
+    <!-- Black and White -->
+    <color name="white">#FFFFFF</color>
+    <color name="black_alpha_50">#6D6D6D</color>
+    <color name="colorBtnNormal">#DC5B28</color>
+    <color name="colorBtnPressed">#c23800</color>
+    <color name="colorBtnApplied">#808080</color>
+    <color name="color_line">#f7f3f3</color>
+
+
+
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
+
+
+    <color name="tab_background_selected">#479736</color>
+    <color name="tab_background_unselected">#B4B4B4</color>
+</resources>

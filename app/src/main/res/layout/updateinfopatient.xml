@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="50dp"
+        android:background="@drawable/unnamed"/>
+
+
+    <TextView
+        android:id="@+id/text_info"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_10"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:text="@string/update_doc"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/top_"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:background="#FFFFFF"
+        android:layout_marginTop="2dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ABABAB"
+            android:text="Basic Information"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/image_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_700"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_below="@+id/linear_txt"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:baselineAligned="false">
+
+            <ImageView
+                android:id="@+id/backarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:visibility="visible"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="center_vertical" />
+
+            <ImageView
+                android:id="@+id/drawer_ham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bjainicon"
+                android:visibility="visible"
+                android:layout_marginLeft="2dp"
+                android:layout_gravity="center_vertical" />
+
+            <LinearLayout
+                android:id="@+id/title_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.90"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                >
+
+
+                <ImageView
+                    android:id="@+id/toolbar_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/bjainicon"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Edit Profile"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:layout_alignTop="@+id/img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="0dp"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/toolbar_image1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:src="@drawable/otificationwhite"
+                android:layout_gravity="right"
+                android:visibility="invisible"
+                />
+
+            <LinearLayout
+                android:id="@+id/search_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/ic_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow"/>
+                <EditText
+                    android:id="@+id/search_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/ic_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/close"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:src="@drawable/notificationsound"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_above="@+id/btn_submit"
+        android:layout_below="@+id/image_toolbar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/img_profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_action_person"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/green_700"/>
+
+                <TextView
+                    android:id="@+id/txt_pname"
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_profile"
+                    android:contentDescription="@string/app_name"
+                    android:hint="Name"
+                    android:inputType="textCapWords"
+                    android:textColor="#626262"
+                    android:textColorHint="#ABABAB" />
+            </RelativeLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:id="@+id/edtxt_pname"
+                    android:layout_width="match_parent"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:hint="Name"
+                    android:inputType="textCapWords"
+                    android:textColor="#626262"
+                    android:textColorHint="#ABABAB" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <EditText
+                android:id="@+id/edtxt_pemail"
+                android:layout_width="match_parent"
+                android:hint="Email"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_height="40dp"
+                android:contentDescription="@string/app_name"
+                android:focusable="false"
+                android:textColor="#626262"
+                android:textColorHint="#ABABAB" />
+        </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edtxt_ppassword"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:hint="@string/h_password"
+                    android:inputType="textCapWords"
+                    android:textColor="#626262"
+                    android:maxLength="10"
+                    android:textColorHint="#ABABAB"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edtxt_page"
+                    android:layout_width="match_parent"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:inputType="number"
+                    android:hint="Enter Patient Age"
+                    android:textColor="#626262"
+                    android:textColorHint="#ABABAB" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:id="@+id/edtxt_pbgroup"
+                    android:layout_width="match_parent"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/b_group"
+                    android:inputType="textCapWords"
+                    android:textColor="#626262"
+                    android:textColorHint="#ABABAB" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:id="@+id/edtxt_pwt"
+                    android:layout_width="match_parent"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:inputType="number"
+                    android:hint="@string/weight"
+                    android:textColor="#626262"
+                    android:textColorHint="#ABABAB" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:id="@+id/edtxt_pheight"
+                    android:layout_width="match_parent"
+                    android:textSize="14dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:inputType="number"
+                    android:hint="@string/height"
+                    android:textColor="#626262"
+                    android:textColorHint="#ABABAB" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:id="@+id/edtxt_descrption"
+                    android:layout_width="match_parent"
+                    android:textSize="14dp"
+                    android:visibility="visible"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:inputType="textCapWords"
+                    android:hint="@string/description"
+                    android:textColor="#626262"
+                    android:textColorHint="#ABABAB" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <TextView
+                    android:text="Condition"
+                    android:layout_width="match_parent"
+                    android:textSize="12dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/app_name"
+                    android:textColor="#626262"
+                    android:textColorHint="#ABABAB"
+                    android:layout_weight="1"/>
+                <RadioGroup
+                    android:id="@+id/p_rg_Condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                    <RadioButton
+                        android:id="@+id/Normal"
+                        android:layout_width="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#626262"
+                        android:text="Normal"
+                        />
+                    <RadioButton
+                        android:id="@+id/Critical"
+                        android:layout_width="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#626262"
+                        android:text="Critical"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/edtxt_activation"
+                    android:text="Account"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/app_name"
+                    android:textColor="#686766"
+                    android:textColorHint="@color/user_hint"
+                    android:layout_weight="1"/>
+
+                <RadioGroup
+                    android:id="@+id/p_rg_Account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                    <RadioButton
+                        android:id="@+id/active"
+                        android:layout_width="match_parent"
+                        android:textSize="14dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#686766"
+                        android:textStyle="bold"
+                        android:text="Active"
+                        />
+                    <RadioButton
+                        android:id="@+id/deactive"
+                        android:layout_width="match_parent"
+                        android:textSize="14dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#686766"
+                        android:textStyle="bold"
+                        android:text="Deactive"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="#DDDDDD"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/subm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#1E7437"
+                android:textStyle="bold"
+                android:text="SUBMIT"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/uplo"
+                android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/btn_submit1"
+            android:layout_width="match_parent"
+            android:background="@drawable/btn_bg"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:contentDescription="@string/app_name"
+            android:layout_marginBottom="0dp"
+            android:text="Submit"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:id="@+id/ll_patient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:padding="5dp"
+                android:id="@+id/iv_profile"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_action_person"
+                app:civ_border_width="0dp"
+                app:civ_border_color="#F6F6F6"
+                android:layout_weight=".7"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:textSize="19dp"
+                    android:layout_gravity="left"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textColor="#686766"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="#9A9A9A"
+                    android:layout_gravity="left"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_activate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="activate"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

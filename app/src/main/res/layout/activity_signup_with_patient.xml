@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/spalsh_new"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <!--<com.capri4physio.view.CircularImageView-->
+    <!--android:id="@+id/img_profile"-->
+    <!--android:layout_width="110dp"-->
+    <!--android:background="@color/bg"-->
+    <!--android:layout_height="110dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:src="@drawable/ic_action_person" />-->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_10"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_patient"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ln_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/edtxt_pname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:hint="Name"
+                android:inputType="textCapWords"
+                android:textColor="@color/user_text"
+                android:textColorHint="@color/user_hint" />
+
+            <EditText
+                android:id="@+id/edtxt_pemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:hint="Enter Login Id"
+                android:inputType="textCapWords"
+                android:textColor="@color/user_text"
+                android:textColorHint="@color/user_hint" />
+
+
+
+            <EditText
+                android:id="@+id/edtxt_ppassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:hint="@string/h_password"
+                android:inputType="textPassword"
+                android:textColor="@color/user_text"
+                android:maxLength="10"
+                android:textColorHint="@color/user_hint" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/linearbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:background="@drawable/btn_bg"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:contentDescription="@string/app_name"
+            android:text="Submit"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"></ListView>
+</RelativeLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aigestudio="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saturday"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From" />
+
+                <TextView
+                    android:id="@+id/tv_sat_from"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f6f6f6"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_30"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <com.aigestudio.wheelpicker.WheelPicker
+                    android:id="@+id/wheel_sat_from_hour"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#f6f6f6"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    aigestudio:wheel_atmospheric="true"
+                    aigestudio:wheel_curved="true"
+                    aigestudio:wheel_cyclic="true"
+                    aigestudio:wheel_item_align="right"
+                    aigestudio:wheel_visible_item_count="3"
+                    aigestudio:wheel_item_text_color="#A7A7DB"
+                    aigestudio:wheel_item_text_size="24sp"
+                    aigestudio:wheel_selected_item_text_color="#536D8A" />
+
+                <com.aigestudio.wheelpicker.WheelPicker
+                    android:id="@+id/wheel_sat_from_minute"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#f6f6f6"
+                    aigestudio:wheel_atmospheric="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    aigestudio:wheel_curved="true"
+                    aigestudio:wheel_cyclic="true"
+                    aigestudio:wheel_item_align="right"
+                    aigestudio:wheel_visible_item_count="3"
+                    aigestudio:wheel_item_text_color="#A7A7DB"
+                    aigestudio:wheel_item_text_size="24sp"
+                    aigestudio:wheel_selected_item_text_color="#536D8A" />
+
+                <com.aigestudio.wheelpicker.WheelPicker
+                    android:id="@+id/wheel_sat_from_ampm"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#f6f6f6"
+                    aigestudio:wheel_atmospheric="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    aigestudio:wheel_curved="true"
+
+                    aigestudio:wheel_item_align="right"
+                    aigestudio:wheel_visible_item_count="3"
+                    aigestudio:wheel_item_text_color="#A7A7DB"
+                    aigestudio:wheel_item_text_size="24sp"
+                    aigestudio:wheel_selected_item_text_color="#536D8A" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="1dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="To" />
+
+                <TextView
+                    android:id="@+id/tv_sat_to"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder"
+                    android:text="TO" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f6f6f6"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_30"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <com.aigestudio.wheelpicker.WheelPicker
+                    android:id="@+id/wheel_sat_to_hour"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#f6f6f6"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    aigestudio:wheel_atmospheric="true"
+                    aigestudio:wheel_curved="true"
+                    aigestudio:wheel_cyclic="true"
+                    aigestudio:wheel_item_align="right"
+                    aigestudio:wheel_visible_item_count="3"
+                    aigestudio:wheel_item_text_color="#A7A7DB"
+                    aigestudio:wheel_item_text_size="24sp"
+                    aigestudio:wheel_selected_item_text_color="#536D8A" />
+
+                <com.aigestudio.wheelpicker.WheelPicker
+                    android:id="@+id/wheel_sat_to_minute"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#f6f6f6"
+                    aigestudio:wheel_atmospheric="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    aigestudio:wheel_curved="true"
+                    aigestudio:wheel_cyclic="true"
+                    aigestudio:wheel_item_align="right"
+                    aigestudio:wheel_visible_item_count="3"
+                    aigestudio:wheel_item_text_color="#A7A7DB"
+                    aigestudio:wheel_item_text_size="24sp"
+                    aigestudio:wheel_selected_item_text_color="#536D8A" />
+
+                <com.aigestudio.wheelpicker.WheelPicker
+                    android:id="@+id/wheel_sat_to_ampm"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#f6f6f6"
+                    aigestudio:wheel_atmospheric="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    aigestudio:wheel_curved="true"
+
+                    aigestudio:wheel_item_align="right"
+                    aigestudio:wheel_visible_item_count="3"
+                    aigestudio:wheel_item_text_color="#A7A7DB"
+                    aigestudio:wheel_item_text_size="24sp"
+                    aigestudio:wheel_selected_item_text_color="#536D8A" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_20"
+        android:gravity="center">
+
+
+        <EditText
+            android:id="@+id/et_sat_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="place"
+            android:minWidth="150dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

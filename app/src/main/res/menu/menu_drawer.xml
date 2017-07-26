@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/navigation_item_7"
+            android:icon="@drawable/appointment_icon"
+            android:title="Appointments"/>
+
+
+
+        <item
+            android:id="@+id/navigation_item_10"
+            android:icon="@drawable/pro"
+            android:title="Doctor"/>
+
+
+
+
+
+
+
+
+
+
+        <!--<item
+            android:id="@+id/navigation_item_1"
+            android:checked="true"
+            android:icon="@drawable/ic_arrow01"
+            android:title="@string/menu1"/>
+        <item
+            android:id="@+id/navigation_item_2"
+            android:icon="@drawable/ic_arrow01"
+            android:title="@string/menu2"/>
+        <item
+            android:id="@+id/navigation_item_3"
+            android:icon="@drawable/ic_arrow01"
+            android:title="@string/menu3"/>
+        <item
+            android:id="@+id/navigation_item_4"
+            android:icon="@drawable/ic_arrow01"
+            android:title="@string/menu4"/>
+        <item
+            android:id="@+id/navigation_item_5"
+            android:icon="@drawable/ic_arrow01"
+            android:title="@string/menu5"/>-->
+        <item
+            android:id="@+id/navigation_item_3"
+            android:icon="@drawable/broadcast_icon"
+            android:title="@string/menu3"/>
+        <item
+            android:id="@+id/navigation_item_4"
+            android:icon="@drawable/notification"
+            android:title="@string/menu4"/>
+        <item
+            android:id="@+id/navigation_item_5"
+            android:icon="@drawable/search"
+            android:title="@string/menu7"/>
+        <item
+            android:id="@+id/navigation_item_6"
+            android:icon="@drawable/signout_icon"
+            android:title="@string/menu6"/>
+    </group>
+</menu>

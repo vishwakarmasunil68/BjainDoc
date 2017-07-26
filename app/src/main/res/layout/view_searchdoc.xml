@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/img_profile"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bjainicon"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FFFFFF"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:weightSum="3"
+                    >
+                    <TextView
+                        android:id="@+id/tv_medication_time"
+                        android:layout_width="wrap_content"
+                        android:gravity="start"
+                        android:textSize="14dp"
+                        android:layout_gravity="start"
+                        android:textStyle="bold"
+                        android:layout_height="0dp"
+                        android:text="@string/name"
+                        android:textColor="#686766"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/txt_patient_address"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:textSize="12dp"
+                        android:textColor="#808080"
+                        android:layout_gravity="end"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/txt_patient_designation"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:textSize="12dp"
+                        android:textColor="#808080"
+                        android:layout_gravity="end"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#E3E3E3"></View>
+
+</LinearLayout>

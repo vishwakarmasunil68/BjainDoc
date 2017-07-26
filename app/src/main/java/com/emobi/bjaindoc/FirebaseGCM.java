@@ -1,0 +1,13 @@
+package com.emobi.bjaindoc;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+public class FirebaseGCM extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_firebase_gcm);
+    }
+}

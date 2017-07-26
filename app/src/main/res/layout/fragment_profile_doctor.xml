@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_normal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="#666867"
+                android:textStyle="bold"
+                android:text="About"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="#666867"
+                android:textStyle="bold"
+                android:text="Additional Info"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_refresh"
+            android:layout_width="@dimen/nav_profile_pic"
+            android:visibility="gone"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_rotate" />
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/app_name"
+            android:src="@android:drawable/ic_menu_edit" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/img_profile"
+                android:padding="@dimen/padding_5"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_weight="2"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#ABABAB">
+            <EditText
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:textColor="#686766"
+                android:hint="Name"
+                android:textColorHint="#ABABAB"
+                android:textSize="14dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_profile"
+                android:text="Name"
+                android:layout_weight="5"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/img_profile"
+                android:padding="@dimen/padding_5"
+                android:text="Email"
+                android:layout_weight="2"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#ABABAB">
+            <EditText
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:textColor="#686766"
+                android:hint="Email"
+                android:textColorHint="#ABABAB"
+                android:textSize="14dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name"
+                android:layout_toRightOf="@+id/img_profile"
+                android:contentDescription="@string/app_name"
+                android:text="Email"
+                android:layout_weight="5"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edtxt_pmob"
+                android:layout_width="match_parent"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:inputType="number"
+                android:hint="@string/h_mobile"
+                android:textColor="#626262"
+                android:textColorHint="#ABABAB" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/img_profile"
+                android:padding="@dimen/padding_5"
+                android:text="Weight"
+                android:layout_weight="2"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#ABABAB">
+            <EditText
+                android:id="@+id/txt_wt"
+                android:layout_width="match_parent"
+                android:textColor="#686766"
+                android:hint="Weight"
+                android:textColorHint="#ABABAB"
+                android:textSize="14dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_email"
+                android:layout_toRightOf="@+id/img_profile"
+                android:contentDescription="@string/h_mobile"
+                android:text="weight"
+                android:layout_weight="3"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/img_profile"
+                android:padding="@dimen/padding_5"
+                android:text="Height"
+                android:layout_weight="2"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#ABABAB">
+            <EditText
+                android:id="@+id/txt_ht"
+                android:layout_width="match_parent"
+                android:textColor="#686766"
+                android:hint="Height"
+                android:textColorHint="#ABABAB"
+                android:textSize="14dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_wt"
+                android:layout_toRightOf="@+id/img_profile"
+                android:contentDescription="@string/h_mobile"
+                android:text="height"
+                android:layout_weight="3"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/img_profile"
+                android:padding="@dimen/padding_5"
+                android:text="Blood Group"
+                android:layout_weight="2"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#ABABAB">
+            <EditText
+                android:id="@+id/txt_b_group"
+                android:layout_width="match_parent"
+                android:textColor="#686766"
+                android:hint="Blood Group"
+                android:textColorHint="#ABABAB"
+                android:textSize="14dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_ht"
+                android:layout_toRightOf="@+id/img_profile"
+                android:contentDescription="@string/h_mobile"
+                android:text="Blood Group"
+                android:layout_weight="3"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/img_profile"
+                android:padding="@dimen/padding_5"
+                android:text="Age"
+                android:layout_weight="2"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#ABABAB">
+            <EditText
+                android:id="@+id/txt_age1"
+                android:layout_width="match_parent"
+                android:textColor="#686766"
+                android:hint="Age"
+                android:textColorHint="#ABABAB"
+                android:textSize="14dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txt_b_group"
+                android:layout_toRightOf="@+id/img_profile"
+                android:contentDescription="@string/h_mobile"
+                android:text="Age"
+                android:layout_weight="3"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/img_profile"
+                android:padding="@dimen/padding_5"
+                android:text="Condition"
+                android:layout_weight="2"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#ABABAB">
+            <EditText
+                android:id="@+id/txt_codition1"
+                android:layout_width="match_parent"
+                android:textColor="#686766"
+                android:textColorHint="#ABABAB"
+                android:hint="Condition"
+                android:textSize="14dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_b_group"
+                android:layout_toRightOf="@+id/img_profile"
+                android:contentDescription="@string/h_mobile"
+                android:text="Normal"
+                android:layout_weight="3"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/img_profile"
+                android:text="Patient Description"
+                android:layout_weight="2"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#ABABAB">
+            <EditText
+                android:id="@+id/txt_descrption1"
+                android:layout_width="match_parent"
+                android:textColor="#686766"
+                android:hint="Patient Description"
+                android:textSize="14dp"
+                android:textColorHint="#ABABAB"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_b_group"
+                android:layout_toRightOf="@+id/img_profile"
+                android:contentDescription="@string/h_mobile"
+                android:text="Age"
+                android:layout_weight="3"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layout_top"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/padding_10"
+        android:background="@color/color_line"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/txt_age"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="30 years" />
+
+        <!--<TextView
+            android:id="@+id/txt_height"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="110 lb" />
+
+        <TextView
+            android:id="@+id/txt_bmi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="18.6 bmi" />-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/layout1">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/personal_info" />
+
+        <TextView
+            android:id="@+id/txt_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/img"
+            android:layout_toRightOf="@+id/img"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/padding_10"
+            android:singleLine="true"
+            android:text="Other information" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layout1"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@color/color_line"
+        android:visibility="gone"
+        android:contentDescription="@string/app_name" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+
+
+    <FrameLayout
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_timing"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="25dp"
+            android:background="@color/green_700"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="0dp"
+            android:text="Edit"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6F6"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/unnamed"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/text_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/app_name"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/padding_10"
+            android:text="@string/update_doc"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_info"
+            android:padding="10dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_scroll_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/top_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="#FFFFFF"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+                    <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:id="@+id/rv_clinic_info"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="140dp"-->
+                    <!--android:visibility="visible"-->
+                    <!--/>-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Professional Information"
+                        android:textColor="#3F3F3F"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/img_profile"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_action_person"
+                            app:civ_border_color="@color/green_700"
+                            app:civ_border_width="2dp" />
+
+                        <TextView
+                            android:id="@+id/txt_pname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_toRightOf="@+id/img_profile"
+                            android:contentDescription="@string/app_name"
+                            android:hint="Name"
+                            android:inputType="textCapWords"
+                            android:textColor="#626262"
+                            android:textColorHint="#ABABAB"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_doc_clinic_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:hint="Clinic Name *"
+                            android:inputType="textCapWords"
+                            android:textColor="#626262"
+                            android:textColorHint="#ABABAB"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:hint="Email (Optional)"
+                            android:inputType="textCapWords"
+                            android:textColor="#626262"
+                            android:textColorHint="#ABABAB"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:hint="Mobile *"
+                            android:inputType="number"
+                            android:textColor="#626262"
+                            android:maxLength="10"
+                            android:textColorHint="#ABABAB"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_telephone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:hint="Telephone (Optional)"
+                            android:inputType="number"
+                            android:textColor="#626262"
+                            android:textColorHint="#ABABAB"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_doc_clinc_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:hint="Clinic Address *"
+                            android:inputType="textCapWords"
+                            android:textColor="#626262"
+                            android:textColorHint="#ABABAB"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_doc_clinic_pincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:hint="Clinic PinCode *"
+                            android:inputType="number"
+                            android:textColor="#626262"
+                            android:textColorHint="#ABABAB"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_doc_clinic_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:hint="City *"
+                            android:inputType="textCapWords"
+                            android:textColor="#626262"
+                            android:textColorHint="#ABABAB"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_doc_clinic_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:hint="State *"
+                            android:inputType="textCapWords"
+                            android:textColor="#626262"
+                            android:textColorHint="#ABABAB"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/et_doc_clinic_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="Country *"
+                        android:inputType="textCapWords"
+                        android:textColor="#626262"
+                        android:textColorHint="#ABABAB"
+                        android:imeOptions="actionDone"
+                        android:textSize="14dp" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/d_department"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:hint="Department"
+                            android:inputType="textCapWords"
+                            android:textColor="#626262"
+                            android:textColorHint="#ABABAB"
+                            android:textSize="14dp"
+                            android:visibility="gone" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <EditText
+                        android:id="@+id/edtxt_pemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/app_name"
+                        android:textColor="#626262"
+                        android:textColorHint="@color/user_hint"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/parentmain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="2">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.7">
+
+                                <EditText
+                                    android:id="@+id/edtxt_mobile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.2"
+                                    android:contentDescription="@string/app_name"
+                                    android:hint="Clinic Address"
+                                    android:inputType="textCapWords"
+                                    android:textColor="#626262"
+                                    android:textColorHint="#ABABAB"
+                                    android:textSize="14dp" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <ImageView
+                                android:id="@+id/more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight=".3"
+                                android:src="@drawable/plussss" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edtxt_ppassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:hint="Designation"
+                            android:inputType="textCapWords"
+                            android:maxLength="10"
+                            android:textColor="#626262"
+                            android:textColorHint="#ABABAB"
+                            android:textSize="14dp"
+                            android:visibility="gone" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edtxt_d_degree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Degree"
+                            android:inputType="textCapWords"
+                            android:textColor="#626262"
+                            android:textColorHint="#ABABAB"
+                            android:textSize="14dp"
+                            android:visibility="gone" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edtxt_d_specialist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:hint="Specialist"
+                            android:inputType="textCapWords"
+                            android:textColor="#626262"
+                            android:textColorHint="#ABABAB"
+                            android:textSize="14dp"
+                            android:visibility="gone" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edtxt_pheight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:hint="@string/height"
+                            android:inputType="textCapWords"
+                            android:textColor="#626262"
+                            android:textColorHint="#ABABAB"
+                            android:visibility="gone" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edtxt_descrption"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:hint="@string/description"
+                            android:inputType="textCapWords"
+                            android:textColor="#626262"
+                            android:textColorHint="#ABABAB"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/app_name"
+                            android:text="Condition"
+                            android:textColor="#626262"
+                            android:textColorHint="#ABABAB"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:id="@+id/p_rg_Condition"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RadioButton
+                                android:id="@+id/Normal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Normal"
+                                android:textColor="#626262"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/Critical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Critical"
+                                android:textColor="#626262" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_clinic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="25dp"
+        android:src="@drawable/edit_btn"
+
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_timing"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="25dp"
+        android:src="@drawable/plussss" />-->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right">
+
+        <TextView
+            android:id="@+id/fab_clinic"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|end"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_margin="25dp"
+            android:textStyle="bold"
+            android:background="#BDBDBD"
+            android:text="Add Timings"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="0dp"
+            android:text="Save"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+</FrameLayout>

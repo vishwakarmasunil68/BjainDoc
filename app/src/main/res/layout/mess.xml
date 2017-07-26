@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green_700"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+
+        >
+
+        <EditText
+            android:id="@+id/msg_et"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/circle0"
+            android:hint="Type a message"
+            />
+        <ImageView android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/send4"
+            android:background="@drawable/xxx36"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="13dp"
+            android:paddingStart="13dp"
+            android:paddingRight="17dp"
+            android:paddingEnd="17dp"
+            />
+        <ImageView android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/send"
+            android:background="@drawable/xxx36"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="13dp"
+            android:paddingStart="13dp"
+            android:paddingRight="17dp"
+            android:paddingEnd="17dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

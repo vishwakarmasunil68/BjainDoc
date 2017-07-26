@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/image_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_700"
+        android:minHeight="?attr/actionBarSize"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_below="@+id/linear_txt"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:baselineAligned="false">
+
+            <ImageView
+                android:id="@+id/backarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:visibility="visible"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="center_vertical" />
+
+            <ImageView
+                android:id="@+id/drawer_ham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bjainicon"
+                android:visibility="visible"
+                android:layout_marginLeft="2dp"
+                android:layout_gravity="center_vertical" />
+            <EditText
+                android:id="@+id/edsearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Serach"
+                android:textColor="@color/white"
+                android:maxLines="1"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:textColorHint="@color/white"
+                android:imeOptions="actionDone"/>
+
+            <LinearLayout
+                android:id="@+id/title_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/toolbar_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/bjainicon"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Patient list"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:layout_alignTop="@+id/img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="0dp"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/toolbar_image1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:src="@drawable/searchwhite"
+                android:layout_gravity="right"
+                android:visibility="visible"
+                />
+
+            <ImageView
+                android:id="@+id/toolbar_image4"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:src="@drawable/cross36"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:id="@+id/search_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/ic_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow"/>
+                <EditText
+                    android:id="@+id/search_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/ic_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/close"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:src="@drawable/notificationsound"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        app:rippleColor="@color/green_700"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_above="@+id/bottom"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/green_700"
+        android:src="@android:drawable/ic_input_add"
+        app:menu_colorNormal="@color/green_700"
+        app:menu_colorPressed="#FFFFFF"
+        android:visibility="gone"
+        app:menu_colorRipple="#757575">
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_journey1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/addpatient"
+        app:fab_label="Add new patient"
+        app:fab_size="mini"
+        app:fab_colorNormal="@color/green_700"
+        app:fab_colorPressed="#FFFFFF"
+        app:fab_colorRipple="#757575"/>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_journey2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/addpatient"
+        app:fab_label="Add existing patient"
+        app:fab_size="mini"
+        app:fab_colorNormal="@color/green_700"
+        app:fab_colorPressed="#FFFFFF"
+        app:fab_colorRipple="#757575"/>
+
+</com.github.clans.fab.FloatingActionMenu>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/green_700"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/sign"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="12dp"
+            android:layout_height="wrap_content"
+            android:textColor="#F6F6F6"
+            android:text="@string/txttermcondition1"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:text="Save Changes"
+            android:id="@+id/btn_submit"
+            android:background="@drawable/btn_bg"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/image_toolbar"
+        android:layout_toEndOf="@+id/image_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/ll_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

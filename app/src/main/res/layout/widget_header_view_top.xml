@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.anton46.whatsapp_profile.HeaderView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/last_seen"
+        android:layout_width="match_parent"
+        android:layout_gravity="left"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_profile_name"
+        android:text="Shubham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginLeft="0dp"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+</FrameLayout>
+
+</com.anton46.whatsapp_profile.HeaderView>

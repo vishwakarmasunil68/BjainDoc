@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.emobi.bjaindoc"
+
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.4"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //    compile 'com.github.chenupt.android:multiplemodel:1.1.0@aar'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support:design:25.1.1'
+    compile 'com.android.support:recyclerview-v7:25.1.1'
+//    compile 'com.android.support:support-v4:25.0.0'
+    compile 'com.android.support:cardview-v7:25.1.1'
+    compile 'com.google.android.gms:play-services-gcm:9.4.0'
+    compile 'org.apache.httpcomponents:httpmime:4.2.1'
+    compile 'org.apache.httpcomponents:httpclient:4.5'
+    compile 'org.apache.httpcomponents:httpcore:4.3.2'
+
+
+    compile 'com.facebook.android:facebook-android-sdk:4.+'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.google.guava:guava:18.0'
+    compile 'com.wdullaer:materialdatetimepicker:2.5.0'
+
+    compile 'com.google.android.gms:play-services-appindexing:9.4.0'
+
+    compile 'com.google.firebase:firebase-messaging:9.0.0'
+    compile 'com.google.android.gms:play-services:9.4.0'
+    compile 'com.github.wseemann:FFmpegMediaMetadataRetriever:1.0.11'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.clans:fab:1.6.4'
+    compile 'com.google.android.gms:play-services-ads:9.4.0'
+    compile 'com.google.android.gms:play-services-auth:9.4.0'
+    compile 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.itextpdf:itextg:5.5.9'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.github.ozodrukh:CircularReveal:1.1.0'
+    compile 'com.baoyz.swipemenulistview:library:1.3.0'
+}
+
+//compile('com.android.support:support-v4:23.4.0') {
+//    force = true;
+//}
+apply plugin: 'com.google.gms.google-services'

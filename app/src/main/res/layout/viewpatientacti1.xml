@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minHeight="20dp"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_profile"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_action_person"
+            app:civ_border_width="0dp"
+            app:civ_border_color="#F6F6F6"
+            android:layout_weight="2"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:weightSum="2"
+            >
+        <TextView
+            android:id="@+id/tv_medication_time"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="#9A9A9A"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/tv_medication"
+            android:layout_width="wrap_content"
+            android:textSize="12dp"
+            android:textColor="#B5B5B5"
+            android:layout_gravity="left"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:layout_weight="1"
+            />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/txt_patient_activation"
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_weight="2"
+            android:src="@android:drawable/ic_menu_edit"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="1dp"
+            android:background="#E3E3E3" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:minHeight="30dp"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:layout_marginLeft="60dp"
+            android:visibility="visible"
+            android:layout_gravity="left"
+            android:src="@drawable/patient_icon"
+            android:layout_height="20dp"
+            />
+
+            <TextView
+                android:id="@+id/txt_active"
+                android:layout_width="wrap_content"
+                android:padding="2dp"
+                android:textSize="13dp"
+                android:textColor="#B5B5B5"
+                android:gravity="center"
+                android:layout_gravity="left"
+                android:layout_height="wrap_content"
+                android:text="Active"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:layout_marginLeft="60dp"
+                android:visibility="visible"
+                android:layout_gravity="left"
+                android:src="@drawable/patient_icon"
+                android:layout_height="20dp"
+                />
+
+            <TextView
+                android:id="@+id/txt_deactive"
+                android:layout_width="wrap_content"
+                android:padding="2dp"
+                android:textSize="13dp"
+                android:textColor="#B5B5B5"
+                android:gravity="center"
+                android:layout_gravity="left"
+                android:layout_height="wrap_content"
+                android:text="Inactive"
+                android:layout_weight="1"
+                />
+</LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="1dp"
+            android:background="#289E4A" />
+
+    </LinearLayout>
+</LinearLayout>

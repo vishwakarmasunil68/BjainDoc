@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/navigation_header_patient"
+    android:orientation="vertical">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/green_700">
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profilepic"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ic_action_person"
+        android:padding="10dp"
+        android:layout_gravity="left"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/green_700"
+            android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:id="@+id/profilename"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="8dp"
+        android:gravity="left"
+        android:padding="@dimen/padding_5"
+        android:textStyle="bold"
+        android:text="Profile Name"
+        android:textColor="#555555"/>
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/top"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="View Profile"
+        android:visibility="visible"
+        android:textColor="#DCDADB" />
+            </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:src="@drawable/arrow"/>
+    </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grey_400" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/top"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="My  Folders"
+        android:visibility="visible"
+        android:textColor="#3E3E3E"
+        android:textStyle="bold"/>
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grey_400" />
+</LinearLayout>

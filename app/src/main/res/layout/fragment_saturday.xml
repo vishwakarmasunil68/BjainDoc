@@ -1,0 +1,738 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.emobi.bjain.MondayFragment">
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:src="@drawable/morning"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#686667"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Morning"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/mimg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:src="@drawable/addplus"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:id="@+id/lineartop"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:id="@+id/sixam"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="06:00 AM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+            <TextView
+                android:id="@+id/sixthirtyam"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="06:30 AM"
+                android:background="@drawable/text_bg"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:id="@+id/sevenam"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="07:00 AM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+            <TextView
+                android:id="@+id/seventhirtyam"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="07:30 AM"
+                android:background="@drawable/text_bg"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:id="@+id/eightam"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="08:00 AM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+            <TextView
+                android:id="@+id/eightthirtyam"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:background="@drawable/text_bg"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="08:30 AM"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:id="@+id/nineam"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="09:00 AM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+            <TextView
+                android:id="@+id/ninethirtyam"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:background="@drawable/text_bg"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="09:30 AM"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tenam"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="10:00  AM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+            <TextView
+                android:id="@+id/tenthirtyam"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="10:30 AM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/elevenam"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="11:00 AM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+            <TextView
+                android:id="@+id/eleventhirtyam"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="11:30 AM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/aftrnoon"
+                android:layout_weight=".5"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#686667"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Afternoon   (12-4 pm)"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/aimg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:src="@drawable/addplus"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:id="@+id/linearmid"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tweleveam"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="12:00 AM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+            <TextView
+                android:id="@+id/twelevethirtypm"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="12:30 PM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/onepm"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="01:00 PM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+            <TextView
+                android:id="@+id/onethirtypm"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="01:30 PM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/twopm"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="02:00 PM"
+                android:background="@drawable/text_bg"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/twothirtypm"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="02:30 PM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/threepm"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="03:00 PM"
+                android:background="@drawable/text_bg"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/teenthirtypm"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/text_bg"
+                android:text="03:30 PM"
+                android:layout_weight="1"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:src="@drawable/even"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#686667"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Evening "
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/eimg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:src="@drawable/addplus"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearbottom"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/fourpm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="04:00 PM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+            <TextView
+                android:id="@+id/fourthirtypm"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="04:30 PM"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/fivepm"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="05:00 PM"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/fivethirtypm"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="05:30 PM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/sixpm"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="06:00 PM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+            <TextView
+                android:id="@+id/sixthirtypm"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="06:30 PM"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/sevenpm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="07:00 PM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+            <TextView
+                android:id="@+id/seventhirtypm"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="07:30 PM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/eightpm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:textColor="@color/green_700"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="08:00 PM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+            <TextView
+                android:id="@+id/eightthirtypm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="08:30 PM"
+                android:background="@drawable/text_bg"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/ninepm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="09:00 PM"
+                android:background="@drawable/text_bg"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/ninethirtypm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/green_700"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="09:30 PM"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
